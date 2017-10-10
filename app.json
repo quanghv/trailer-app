@@ -1,6 +1,9 @@
 {
   "expo": {
+    "name": "App Trailer",
     "sdkVersion": "21.0.0",
+    "icon": "./src/images/ic_launcher.png",
+    "slug": "app-trailer",
     "primaryColor": "#c0392b",
     "androidStatusBarColor": "#73221a",
     "loading": {
