@@ -1,5 +1,11 @@
 {
   "expo": {
-    "sdkVersion": "21.0.0"
+    "sdkVersion": "21.0.0",
+    "primaryColor": "#c0392b",
+    "androidStatusBarColor": "#73221a",
+    "loading": {
+      "icon": "./src/images/logo.png",
+      "backgroundColor": "#73221a"
+    }
   }
 }
