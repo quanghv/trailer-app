@@ -160,6 +160,7 @@ class Login extends React.Component {
         <Content
           style={styles.contentStyle}
           contentContainerStyle={styles.containerStyle}
+          showsVerticalScrollIndicator={false}
         >
           <View style={styles.contentLogo}>
             <Image source={config.images.logo} style={styles.logo} />

@@ -137,16 +137,16 @@ export default {
   // FooterTab
   tabBarTextColor: "#d96255",
   tabBarTextSize: platform === "ios" ? 14 : 11,
-  activeTab: platform === "ios" ? "#007aff" : "#fff",
+  activeTab: platform === "ios" ? "#fff" : "#fff",
   sTabBarActiveTextColor: "#007aff",
   tabBarActiveTextColor: "#fff",
-  tabActiveBgColor: platform === "ios" ? "#1569f4" : undefined,
+  tabActiveBgColor: platform === "ios" ? config.colors.brandPrimary : undefined,
 
   // Tab
   tabDefaultBg: config.colors.brandPrimary,
   topTabBarTextColor: "#b3c7f9",
   topTabBarActiveTextColor: "#fff",
-  topTabActiveBgColor: platform === "ios" ? "#1569f4" : undefined,
+  topTabActiveBgColor: platform === "ios" ? config.colors.brandPrimary : undefined,
   topTabBarBorderColor: "#fff",
   topTabBarActiveBorderColor: "#fff",
 

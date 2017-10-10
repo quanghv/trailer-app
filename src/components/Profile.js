@@ -99,7 +99,11 @@ class Profile extends PureComponent {
   }
 }
 const styles = StyleSheet.create({
-  header: { backgroundColor: "transparent", elevation: 0 },
+  header: {
+    backgroundColor: "transparent",
+    elevation: 0,
+    borderBottomWidth: 0
+  },
   view: { width: "80%", alignSelf: "center" },
   logo: {
     backgroundColor: config.colors.brandPrimary,
