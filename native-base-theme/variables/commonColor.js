@@ -1,6 +1,14 @@
 import color from "color";
 import config from "../../src/config";
 
+const hexColor = thisColor => {
+  try {
+    return thisColor.hex();
+  } catch (e) {
+    return thisColor.hexString();
+  }
+};
+
 import { Platform, Dimensions, PixelRatio } from "react-native";
 
 const deviceHeight = Dimensions.get("window").height;
@@ -146,7 +154,8 @@ export default {
   tabDefaultBg: config.colors.brandPrimary,
   topTabBarTextColor: "#b3c7f9",
   topTabBarActiveTextColor: "#fff",
-  topTabActiveBgColor: platform === "ios" ? config.colors.brandPrimary : undefined,
+  topTabActiveBgColor:
+    platform === "ios" ? config.colors.brandPrimary : undefined,
   topTabBarBorderColor: "#fff",
   topTabBarActiveBorderColor: "#fff",
 
@@ -163,9 +172,7 @@ export default {
   iosStatusbar: "light-content",
   toolbarDefaultBorder: config.colors.brandPrimary,
   get statusBarColor() {
-    return color(this.toolbarDefaultBg)
-      .darken(0.2)
-      .hex();
+    return hexColor(color(this.toolbarDefaultBg).darken(0.2));
   },
 
   // Icon
@@ -233,9 +240,7 @@ export default {
   radioColor: "#7e7e7e",
 
   get radioSelectedColor() {
-    return color(this.radioColor)
-      .darken(0.2)
-      .hex();
+    return hexColor(color(this.radioColor).darken(0.2));
   },
 
   // Spinner
@@ -267,9 +272,7 @@ export default {
   contentPadding: 10,
 
   get darkenHeader() {
-    return color(this.tabBgColor)
-      .darken(0.03)
-      .hex();
+    return hexColor(color(this.tabBgColor).darken(0.03));
   },
 
   dropdownBg: "#000",
